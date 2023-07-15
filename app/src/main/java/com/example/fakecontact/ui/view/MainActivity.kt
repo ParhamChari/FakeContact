@@ -4,19 +4,18 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fakecontact.R
+import com.example.fakecontact.data.Listener.ContactClickListener
 import com.example.fakecontact.data.model.ContactModel
 import com.example.fakecontact.databinding.ActivityMainBinding
 import com.example.fakecontact.ui.adapter.ContactAdapter
-import com.example.fakecontact.ui.listener.ContactClickListener
 import com.example.fakecontact.utils.FakeData
 
 class MainActivity : AppCompatActivity(), ContactClickListener {
 
-    lateinit var binding: ActivityMainBinding
-    lateinit var adapter: ContactAdapter
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var adapter: ContactAdapter
 
-    lateinit var recyclerView: RecyclerView
+    private lateinit var recyclerView: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

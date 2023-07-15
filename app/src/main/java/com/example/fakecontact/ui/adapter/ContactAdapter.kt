@@ -5,11 +5,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.fakecontact.data.model.ContactModel
 import com.example.fakecontact.databinding.ContactItemBinding
-import com.example.fakecontact.ui.listener.ContactClickListener
+import com.example.fakecontact.ui.view.MainActivity
 
 class ContactAdapter(
     private val models: List<ContactModel>,
-    private val clickListener: ContactClickListener
+    private val clickListener: MainActivity
 ) :
     Adapter<ContactViewHolder>() {
 
